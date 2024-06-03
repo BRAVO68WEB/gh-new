@@ -19,6 +19,12 @@ var rootCmd = &cobra.Command{
 	Short: "A gh-new is a CLI tool to quickly create a new GitHub repository from the command line.",
 	Long:  `A gh-new is a CLI tool to quickly create a new GitHub repository from the command line.`,
 	Run: func(cmd *cobra.Command, args []string) {
+		if len(args) < 1 {
+			println("🚨 Please provide a repository name")
+			println("👉 gh new -h")
+			os.Exit(1)
+		}
+
 		repo_name := args[0]
 
 		if repo_name == "." {

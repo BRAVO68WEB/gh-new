@@ -1,9 +1,9 @@
 install:
-	@echo "> Installing wclone..."
+	@echo "> Installing new..."
 	gh extension install .
 
 remove:
-	@echo "< Removing wclone..."
-	gh extension remove wclone
+	@echo "< Removing new..."
+	gh extension remove new
 
 reload: remove install

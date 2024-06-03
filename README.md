@@ -1,36 +1,45 @@
-# wclone - GitHub Workspace Repo Clone
+# new - GitHub Project Initializer
 
 ## Description 👀
 
-This script is useful for cloning all the repositories of a user or organization in a single directory. This directory should be a GitHub User or Organization name.
+
 
 ## Usage 🙌
 
 ```bash
-cd <workspace-directory>
-gh wclone <repo-clone>
+gh new -h
 
-OR
+A gh-new is a CLI tool to quickly create a new GitHub repository from the command line.
 
-cd <workspace-directory>
-gh wclone <repo-clone> <directory>
+Usage:
+  gh-new [flags]
+
+Flags:
+  -h, --help           help for gh-new
+  -m, --msg string     Set the message of initial commit
+  -o, --owner string   Set the owner of the repository
+  -p, --private        Set the repository to private
 ```
 
 ## Example 🤓
 
 ```bash
-mkdir githubnext
+gh new -o BRAVO68WEB -m "Initial commit" -p --push
 
-cd githubnext
-
-gh wclone copilot-timed-experiment
-gh wclone copilotstudyclassroom
+🔧 Repository initialized
+📦 Files added to repository
+📝 Repository committed
+🚀 Private Repository created on GitHub
+🔍 Current branch: main
+🚀 Repository pushed to GitHub
+🎉 Repository created successfully
+👉 https://github.com/BRAVO68WEB/gh-new
 ```
 
 ## Installation 🚀
 
 ```bash
-gh extension install BRAVO68WEB/gh-wclone
+gh extension install BRAVO68WEB/gh-new
 ```
 
 ## Contributing 🤝
