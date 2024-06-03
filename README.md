@@ -2,7 +2,7 @@
 
 ## Description 👀
 
-
+A gh-new is a CLI tool to quickly create a new GitHub repository from the command line.
 
 ## Usage 🙌
 
